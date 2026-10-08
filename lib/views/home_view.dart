@@ -31,6 +31,7 @@ class _HomeScaffold extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         leading: IconButton(
           tooltip: 'Sair',
           icon: const Icon(Icons.logout),

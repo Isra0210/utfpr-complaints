@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "824096666208",
+    "project_id": "utfpr-complaints",
+    "storage_bucket": "utfpr-complaints.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824096666208:android:b6549d05d1927a1c344905",
+        "android_client_info": {
+          "package_name": "com.example.utfpr_complaints"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYfft-sVGIa7U4KDSaMANaWT6GgLdYyX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -31,13 +31,13 @@ class _HomeScaffold extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          tooltip: 'Sair',
+          icon: const Icon(Icons.logout),
+          onPressed: context.read<AuthController>().signOut,
+        ),
         title: const Text('Solicitações Públicas'),
         actions: [
-          IconButton(
-            tooltip: 'Sair',
-            icon: const Icon(Icons.logout),
-            onPressed: context.read<AuthController>().signOut,
-          ),
           IconButton(
             tooltip: 'Adicionar',
             icon: const Icon(Icons.add),

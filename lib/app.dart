@@ -35,10 +35,74 @@ class App extends StatelessWidget {
         theme: ThemeData(
           colorScheme: colorScheme,
           useMaterial3: true,
+          scaffoldBackgroundColor: const Color(0xFFF4F6FA),
           appBarTheme: AppBarTheme(
             backgroundColor: colorScheme.primary,
             foregroundColor: colorScheme.onPrimary,
             surfaceTintColor: Colors.transparent,
+            elevation: 0,
+            titleTextStyle: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          cardTheme: CardThemeData(
+            elevation: 0,
+            color: Colors.white,
+            margin: EdgeInsets.zero,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+              side: const BorderSide(color: Color(0xFFE6E9F0)),
+            ),
+          ),
+          inputDecorationTheme: InputDecorationTheme(
+            filled: true,
+            fillColor: Colors.white,
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 14,
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: const BorderSide(color: Color(0xFFD6DBE6)),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: const BorderSide(color: Color(0xFFD6DBE6)),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(12),
+              borderSide: BorderSide(color: colorScheme.primary, width: 1.6),
+            ),
+          ),
+          filledButtonTheme: FilledButtonThemeData(
+            style: FilledButton.styleFrom(
+              minimumSize: const Size.fromHeight(52),
+              textStyle: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+          ),
+          outlinedButtonTheme: OutlinedButtonThemeData(
+            style: OutlinedButton.styleFrom(
+              minimumSize: const Size.fromHeight(52),
+              foregroundColor: colorScheme.primary,
+              side: const BorderSide(color: Color(0xFFD6DBE6)),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+          ),
+          dialogTheme: DialogThemeData(
+            backgroundColor: Colors.white,
+            surfaceTintColor: Colors.transparent,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
           ),
         ),
         home: const AuthGate(),

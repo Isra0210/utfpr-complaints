@@ -1,6 +1,6 @@
 # UTFPR Solicitações
 
-Aplicativo mobile (Flutter/Android) para que pessoas da UTFPR registrem
+Aplicativo mobile para que pessoas da UTFPR registrem
 reclamações e solicitações a uma central de atendimento. Cada solicitação
 contém título, descrição, foto, autor, geolocalização e data. As solicitações
 aparecem em uma lista pública e qualquer usuário autenticado pode comentar.
